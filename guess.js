@@ -17,4 +17,11 @@ document.querySelector('.check1').addEventListener('click', function () {
         document.querySelector('.number').textContent = number;
         document.querySelector('body').style.backgroundColor = 'green';
     }
+    document.querySelector('.btnagain').addEventListener('click',function(){
+        location.reload();
+        document.querySelector('.message').textContent='start guesing...';
+        document.querySelector('.number').textContent='?';
+        document.querySelector('body').style.backgroundColor='black';
+
+    });
 });
